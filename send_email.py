@@ -1,21 +1,17 @@
 import smtplib, ssl
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 # from os import getenv
 import os
-import smtplib
 
-load_dotenv()
-
-password = os.getenv("PASSWORD_for_app2")
-api_url = os.getenv("API_URL")
+# load_dotenv()
+# api_url = os.getenv("API_URL")
 def send_email_fung(info_messgae):  #3rd
 
-    load_dotenv()
     host = "smtp.gmail.com"
     port = 465
 
     username = "pythonwithabhi@gmail.com"
-
+    password = os.getenv("PASSWORD_for_app2")
 
     #add passwoed when ur code is completed
 
